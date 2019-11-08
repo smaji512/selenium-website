@@ -1,5 +1,5 @@
 #!/bin/sh
-
+sudo su
 sudo docker build ./mysql/ -t db
 sudo docker run -it -d -p 3306:3306 --name mysql db
 
